@@ -1,0 +1,3 @@
+C:\Project\ReviewReader\ReviewReader\bin\Debug\TextReader.exe.config
+C:\Project\ReviewReader\ReviewReader\obj\Debug\TextReader.exe
+C:\Project\ReviewReader\ReviewReader\obj\Debug\TextReader.pdb
