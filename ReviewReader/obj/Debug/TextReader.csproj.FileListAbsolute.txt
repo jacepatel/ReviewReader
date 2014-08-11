@@ -1,0 +1,8 @@
+C:\Project\TextReader\TextReader\bin\Debug\TextReader.exe.config
+C:\Project\TextReader\TextReader\bin\Debug\TextReader.exe
+C:\Project\TextReader\TextReader\bin\Debug\TextReader.pdb
+C:\Project\TextReader\TextReader\obj\Debug\TextReader.csprojResolveAssemblyReference.cache
+C:\Project\TextReader\TextReader\obj\Debug\TextReader.Properties.Resources.resources
+C:\Project\TextReader\TextReader\obj\Debug\TextReader.csproj.GenerateResource.Cache
+C:\Project\TextReader\TextReader\obj\Debug\TextReader.exe
+C:\Project\TextReader\TextReader\obj\Debug\TextReader.pdb
