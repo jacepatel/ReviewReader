@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity.Validation;
+using TextReader.EntityFramework;
+using TextReader;
 
 namespace ReviewReader
 {
@@ -40,16 +43,18 @@ namespace ReviewReader
         [STAThread]
         static void Main()
         {
-            ReadFile();
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
+
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+            //string file = "C:\\Users\\jacep_000\\Downloads\\Amazon Review Dataset.txt";
+            //ReadFile(file);
             
         }
 
         
 
-        public static void ReadFile()
+        public static void ReadFile(string file)
         {
             int counter = 0;
             string line;
@@ -69,10 +74,10 @@ namespace ReviewReader
             Review itemReview = new Review();
 
             // Read the file and display it line by line.
-            System.IO.StreamReader file =
-               new System.IO.StreamReader("C:\\Users\\jacep_000\\Downloads\\Amazon Review Dataset.txt");
+            System.IO.StreamReader fileRead =
+               new System.IO.StreamReader(file);
 
-            while ((line = file.ReadLine()) != null)
+            while ((line = fileRead.ReadLine()) != null)
             {
                 if (string.IsNullOrWhiteSpace(line))
                 {
@@ -279,7 +284,58 @@ namespace ReviewReader
             }
 
             //Write allItems to the db here
-            file.Close();
+            fileRead.Close();
+
+            //Writing the files to the db
+            //This needs handling for a lot of shit
+            using (var db = new ItemReviews())
+            {
+                int itemidcounter = 1;
+                int reviewidcounter = 1;
+                foreach (Item i in allItems)
+                {
+                    var item = new TextReader.EntityFramework.item
+                    {
+                        ItemId = itemidcounter,
+                        ItemName = i.ItemName,
+                        OneStarReviews = i.OneStar,
+                        TwoStarReviews = i.TwoStar,
+                        ThreeStarReviews = i.ThreeStar,
+                        FourStarReviews = i.FourStar,
+                        FiveStarReviews = i.FiveStar,
+                        TotalReviews = i.NoOfReviews
+                    };
+                    itemidcounter++;
+                    foreach (Review r in i.Reviews)
+                    {
+                        var review = new TextReader.EntityFramework.review
+                        {
+                            ItemId = itemidcounter,
+                            IsAmazonVerifiedPurchase = r.IsAmazonVerifiedPurchase,
+                            ItemName = r.ReviewItem,
+                            ReviewId = reviewidcounter,
+                            ReviewersOfReview = r.ReviewersOfReview,
+                            ReviewersOfReviewFoundHelpful = r.ReviewersOfReviewFoundHelpful,
+                            ReviewLocation = r.ReviewLocation,
+                            ShortReview = r.ShortReview,
+                            StarsGiven =  Convert.ToInt32(r.StarsGiven),
+                            ReviewerId = r.Reviewer
+                        };
+                        reviewidcounter++;
+                        db.reviews.Add(review);
+                    }
+                    db.items.Add(item);
+                    try
+                    {
+                        db.SaveChanges();
+                    }
+                    catch (DbEntityValidationException dbEx)
+                    {
+                        //Add some handling yo
+                    }
+                }
+                
+            }
 
             // Suspend the screen.
             Console.ReadLine();

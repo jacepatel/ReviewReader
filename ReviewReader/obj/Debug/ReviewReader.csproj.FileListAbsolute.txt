@@ -1,3 +1,16 @@
 C:\Project\ReviewReader\ReviewReader\bin\Debug\TextReader.exe.config
 C:\Project\ReviewReader\ReviewReader\obj\Debug\TextReader.exe
 C:\Project\ReviewReader\ReviewReader\obj\Debug\TextReader.pdb
+C:\Project\ReviewReader\ReviewReader\bin\Debug\TextReader.exe
+C:\Project\ReviewReader\ReviewReader\bin\Debug\TextReader.pdb
+C:\Project\ReviewReader\ReviewReader\obj\Debug\TextReader.Properties.Resources.resources
+C:\Project\ReviewReader\ReviewReader\obj\Debug\ReviewReader.csproj.GenerateResource.Cache
+C:\Project\ReviewReader\ReviewReader\bin\Debug\EntityFramework.dll
+C:\Project\ReviewReader\ReviewReader\bin\Debug\EntityFramework.SqlServer.dll
+C:\Project\ReviewReader\ReviewReader\bin\Debug\MySql.Data.dll
+C:\Project\ReviewReader\ReviewReader\bin\Debug\mysql.data.entity.EF6.dll
+C:\Project\ReviewReader\ReviewReader\bin\Debug\MySql.Web.dll
+C:\Project\ReviewReader\ReviewReader\bin\Debug\EntityFramework.xml
+C:\Project\ReviewReader\ReviewReader\bin\Debug\EntityFramework.SqlServer.xml
+C:\Project\ReviewReader\ReviewReader\obj\Debug\ReviewReader.csprojResolveAssemblyReference.cache
+C:\Project\ReviewReader\ReviewReader\obj\Debug\TextReader.Form1.resources
