@@ -14,3 +14,6 @@ C:\Project\ReviewReader\ReviewReader\bin\Debug\EntityFramework.xml
 C:\Project\ReviewReader\ReviewReader\bin\Debug\EntityFramework.SqlServer.xml
 C:\Project\ReviewReader\ReviewReader\obj\Debug\ReviewReader.csprojResolveAssemblyReference.cache
 C:\Project\ReviewReader\ReviewReader\obj\Debug\TextReader.Form1.resources
+F:\inb302NEWGIT\ReviewReader\ReviewReader\bin\Debug\TextReader.exe.config
+F:\inb302NEWGIT\ReviewReader\ReviewReader\obj\Debug\TextReader.exe
+F:\inb302NEWGIT\ReviewReader\ReviewReader\obj\Debug\TextReader.pdb

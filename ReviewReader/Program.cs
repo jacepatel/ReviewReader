@@ -56,6 +56,7 @@ namespace ReviewReader
 
         public static void ReadFile(string file)
         {
+            //Look i added some comments
             int counter = 0;
             string line;
             bool isItemHead = false;
