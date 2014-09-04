@@ -69,6 +69,33 @@
 
         private System.Windows.Forms.Button fileSelect;
         private System.Windows.Forms.Button loadDb;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button textFileGenButton;
+        private System.Windows.Forms.Label selectTitle;
+        private System.Windows.Forms.Label userTitle;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button maxRatTableGen;
+        private System.Windows.Forms.Button minRatTableGen;
+        private System.Windows.Forms.Button maxRevTableGen;
+        private System.Windows.Forms.Button minRevTableGen;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label maximumRating;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label minimumRating;
+        private System.Windows.Forms.Label groupTitle;
+        private System.Windows.Forms.Button noRatingGen;
+        private System.Windows.Forms.Button unhelpfulVoteTableGen;
+        private System.Windows.Forms.Button voteGoodTableGen;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label userVoteGood;
+        private System.Windows.Forms.Label label3;
     }
 }
 

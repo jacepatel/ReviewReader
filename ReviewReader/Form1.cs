@@ -46,5 +46,54 @@ namespace TextReader
                 MessageBox.Show("Please Select a file first");
             }
         }
+		
+		private void textFileGenButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minRevTableGen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maxRevTableGen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minRatTableGen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maxRatTableGen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void voteGoodTableGen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void unhelpfulVoteTableGen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void noRatingGen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+		
+		
+		
+		
+		
+		
+		
+		
     }
 }
